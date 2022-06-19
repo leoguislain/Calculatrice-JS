@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.728);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calculatrice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "screen screen screen screen"
+        "boutonfois boutonfois boutondivise boutondivise"
+        "bouton7 bouton8 bouton9 boutonreset"
+        "bouton4 bouton5 bouton6 boutonmoins"
+        "bouton1 bouton2 bouton3 boutonplus"
+        "bouton0 virgule boutonegal boutonegal";
+    height: 95vh;
+    width: 500px;
+    overflow: hidden;
+}
+
+.bouton1 {
+    grid-area: bouton1;
+}
+
+.bouton2 {
+    grid-area: bouton2;
+}
+
+.bouton3 {
+    grid-area: bouton3;
+}
+
+.bouton4 {
+    grid-area: bouton4;
+}
+
+.bouton5 {
+    grid-area: bouton5;
+}
+
+.bouton6 {
+    grid-area: bouton6;
+}
+
+.bouton7 {
+    grid-area: bouton7;
+}
+
+.bouton8 {
+    grid-area: bouton8;
+}
+
+.bouton9 {
+    grid-area: bouton9;
+}
+
+.bouton0 {
+    grid-area: bouton0;
+}
+
+.screen {
+    grid-area: screen;
+}
+
+.boutonfois {
+    grid-area: boutonfois;
+}
+
+.boutondivise {
+    grid-area: boutondivise;
+}
+
+.virgule {
+    grid-area: virgule;
+}
+
+.boutonegal {
+    grid-area: boutonegal;
+}
+
+.boutonreset {
+    grid-area: boutonreset;
+}
+
+.boutonmoins {
+    grid-area: boutonmoins;
+}
+
+.boutonplus {
+    grid-area: boutonplus;
+}
+
+
+.bouton {
+    background-color: #e2e8dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border: solid 1px;
+    cursor: pointer;
+    border: solid 1px rgba(0, 0, 0, 0.162);
+}
+
+.result {
+    background-color: #95A3A4;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 46px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+}

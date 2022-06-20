@@ -1,10 +1,16 @@
-let chiffre = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ","]
+let chiffre = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "."]
 let operator = ["+", "-", "*", "/"]
 let result = document.querySelector(".result")
 
 document.querySelector(".boutonegal").addEventListener("click", function(){
     result.innerHTML = calcul(document.querySelector(".result").textContent);
 })
+
+document.querySelector(".boutondeletelast").addEventListener("click", deletelast)
+
+function deletelast() {
+    result.innerHTML = result.innerHTML.slice(0, -1)
+}
 
 document.querySelector(".boutonreset").addEventListener("click", reset)
 

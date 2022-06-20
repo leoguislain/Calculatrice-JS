@@ -1,7 +1,6 @@
 let result = document.querySelector(".result")
 let chiffre = document.querySelectorAll(".chiffre")
 let operator = document.querySelectorAll(".operator")
-let virgule = document.querySelector(".virgule")
 
 document.querySelector(".boutonegal").addEventListener("click", function () {
     result.innerHTML = calcul(document.querySelector(".result").textContent);
@@ -31,7 +30,7 @@ operator.forEach(function (i) {
     })
 })
 
-virgule.addEventListener("click", function (){
+document.querySelector(".virgule").addEventListener("click", function () {
     if (result.innerHTML === "") {
         result.innerHTML += "0."
     } else {
